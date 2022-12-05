@@ -9,6 +9,7 @@ import io.micronaut.core.util.StringUtils;
 // tag::clazz[]
 @Requires(property = "kafka.enabled", notEquals = StringUtils.TRUE, defaultValue = StringUtils.TRUE) // <1>
 @Replaces(MessageClient.class) // <2>
+@Singleton
 public class MessageClientFallback implements MessageClient { // <3>
 
     @Override
