@@ -4,6 +4,7 @@ package io.micronaut.configuration.kafka.docs.producer.fallback;
 import io.micronaut.context.annotation.Replaces;
 import io.micronaut.context.annotation.Requires;
 import io.micronaut.core.util.StringUtils;
+import jakarta.inject.Singleton;
 // end::imports[]
 
 // tag::clazz[]
